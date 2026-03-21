@@ -6,7 +6,7 @@ networks:
 
 services:
   backend:
-    build: ./mern/backend
+    build: ./backend
     image: mern-backend
     container_name: backend
     ports:
@@ -26,7 +26,7 @@ services:
   
 
   frontend:
-    build: ./mern/frontend
+    build: ./frontend
     image: mern-frontend
     container_name: frontend
     ports:
