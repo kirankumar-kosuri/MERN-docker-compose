@@ -18,9 +18,10 @@ services:
     image: mongodb:7.0
     ports:
       - 27017:27017
-
     volumes:
       - mongodb:/data/db
+
+
   
 
   frontend:
@@ -30,6 +31,8 @@ services:
     ports:
       - 5173:5173
 
+volumes:
+  mongodb:
     
     
 
