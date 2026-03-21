@@ -16,14 +16,12 @@ services:
 
   mongodb:
     image: mongo:7.0
+    container_name: mongodb
     volumes:
       - mongodb:/data/db
     ports:
       - 27017:27017
-    
-
-
-  
+   
 
   frontend:
     build: ./frontend
