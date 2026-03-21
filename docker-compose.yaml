@@ -17,7 +17,7 @@ services:
   mongodb:
     image: mongodb:7.0
     volumes:
-      - mongo-data:/data/db
+      - mongodb:/data/db
     ports:
       - 27017:27017
     
