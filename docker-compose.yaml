@@ -1,39 +1,39 @@
-networks:
-  default:
-    name: roboshop
-    driver: bridge
-    external: false
+# networks:
+#   default:
+#     name: roboshop
+#     driver: bridge
+#     external: false
 
-services:
-  backend:
-    build: ./mern/backend
-    image: mern-backend
-    container_name: backend
-    ports:
-      - 5050:5050
-    depends_on:
-    - mongodb
+# services:
+#   backend:
+#     build: ./mern/backend
+#     image: mern-backend
+#     container_name: backend
+#     ports:
+#       - 5050:5050
+#     depends_on:
+#     - mongodb
 
-  mongodb:
-    image: mongodb:7.0
-    volumes:
-      - mongodb:/data/db
-    ports:
-      - 27017:27017
+#   mongodb:
+#     image: mongodb:7.0
+#     volumes:
+#       - mongodb:/data/db
+#     ports:
+#       - 27017:27017
     
 
 
   
 
-  frontend:
-    build: ./mern/frontend
-    image: mern-frontend
-    container_name: frontend
-    ports:
-      - 5173:5173
+#   frontend:
+#     build: ./mern/frontend
+#     image: mern-frontend
+#     container_name: frontend
+#     ports:
+#       - 5173:5173
 
-volumes:
-  mongodb:
+# volumes:
+#   mongodb:
     
     
 
@@ -45,5 +45,5 @@ volumes:
 
 
 
-    volumes:
-    - mongodb
+#     volumes:
+#     - mongodb
